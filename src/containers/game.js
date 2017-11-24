@@ -1,28 +1,14 @@
 import React, {Component} from 'react';
-import {connect} from 'react-redux';
-import Generation from '../components/generation';
+import Generation from './generation';
+import Controls from './controls';
 
-
-class Game extends Component{
-  constructor(props){
-    super(props);
-  }
-
+export default class Game extends Component{
   render(){
-    // if(!this.props.currentGeneration){
-    //   return <div>at no props</div>
-    // }
-
     return(
       <div>
-        <Generation currentGeneration={this.props.currentGeneration} />
+        <Controls/>
+        <Generation/>
       </div>
     )
   }
 }
-
-function mapStateToProps(state){
-  return {currentGeneration:state.generation};
-}
-
-export default connect(mapStateToProps)(Game);

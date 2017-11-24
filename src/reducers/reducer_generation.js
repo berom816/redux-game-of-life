@@ -1,6 +1,6 @@
-import {NEXT_GENERATION} from '../actions/index.js';
+import {NEXT_GENERATION} from '../actions';
 
-export default function(state = 0, action){
+export default function(state=1, action){
   switch (action.type) {
     case NEXT_GENERATION:
         const nextGeneration = state + 1;

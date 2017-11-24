@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Footer from './footer';
 import Game from '../containers/game';
 
 export default class App extends Component {
@@ -10,7 +9,6 @@ export default class App extends Component {
           Game of Life
         </div>
         <Game/>
-        <Footer/>
       </div>
     );
   }

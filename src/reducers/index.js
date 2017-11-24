@@ -1,7 +1,5 @@
 import { combineReducers } from 'redux';
-// import GenerationReducer from './reducer_generation';
-import GenerationReducer from './generationTemp.js';
-
+import GenerationReducer from './reducer_generation';
 
 const rootReducer = combineReducers({
   generation:GenerationReducer
