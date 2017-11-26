@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Generation from './generation';
 import Controls from './controls';
+import Board from './board';
 
 export default class Game extends Component{
   render(){
@@ -8,6 +9,7 @@ export default class Game extends Component{
       <div>
         <Controls/>
         <Generation/>
+        <Board/>
       </div>
     )
   }

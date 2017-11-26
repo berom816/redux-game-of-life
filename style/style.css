@@ -1,0 +1,25 @@
+.board{
+  border:5px solid black;
+  border-radius:3px;
+  display:flex;
+  flex-wrap:wrap;
+  width:760px;
+  height:460px;
+  margin:auto;
+}
+
+.cell{
+  display:inline-block;
+  box-sizing: border-box;
+  width:15px;
+  height:15px;
+  border:0.5px solid black;
+}
+
+.alive{
+  background-color: green;
+}
+
+.empty{
+  background-color: white;
+}
