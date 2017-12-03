@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
-import {toNextGeneration} from '../actions/index';
 
 class Generation extends Component{
   constructor(props){
@@ -10,8 +8,8 @@ class Generation extends Component{
 
   render(){
     return (
-      <div>
-        {this.props.generation}
+      <div className='generation'>
+        Generation: {this.props.generation}
       </div>
     )
   }

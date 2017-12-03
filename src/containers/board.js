@@ -11,7 +11,6 @@ class Board extends Component{
   }
 
   renderCells(){
-    // console.log(this.props.cells);
     return _.map(this.props.cells, (cell)=>{
       return <Cell key={cell.index} alive={cell.alive} index={cell.index}/>
     })

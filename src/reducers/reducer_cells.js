@@ -11,9 +11,10 @@ const initialCells = {};
 
 //build initial cell population
 for(let a = 0; a < NUMBER_OF_ROWS * NUMBER_OF_COLUMNS; a++){
+  let aliveRandom = Math.floor(((Math.random()) * a)) % 2 === 0;
   initialCells[a] = {
     index:a,
-    alive:true
+    alive:aliveRandom
   }
 }
 
